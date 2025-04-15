@@ -7,8 +7,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/lab/styles/resume.css" media="screen" />
-  <link rel="stylesheet" href="/lab/styles/resume-print.css" media="print" />
+  <link rel="stylesheet" href="resume.css" media="screen" />
+  <link rel="stylesheet" href="resume-print.css" media="print" />
   <title>Resume – Christopher A. Naval</title>
 </head>
 
@@ -16,15 +16,22 @@
   <div class="card">
 
   <div class="header">
-    <img src="profile.jpg" alt="Profile Photo" />
+    <img src="assets/images/profile.jpg" alt="Profile Photo" />
     <div class="header-info">
       <h1>Christopher Naval</h1>
       <p>📞 09695996852</p>
       <p>📧 navalchristopherbago@gmail.com</p>
       <p>📍 86 Kahunari 1 st., Brgy. San Jose, Navotas City</p>
       <a href="index.html" class="btn-back">← Back to Home</a>
+      <button onclick="window.print()" class="print-btn">Print Resume</button>
     </div>
   </div>
+
+  <script>
+    window.onbeforeprint = function() {
+      document.querySelector('.print-btn').style.display = 'none';
+    };
+  </script>
 
   <div class="section">
     <h2>Skills</h2>

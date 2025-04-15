@@ -168,14 +168,15 @@ h1 {
   
   .skill-card {
     background: #3241BC;
-    padding: 20px;
-    border-radius: 15px;
+    padding: 15px;
+    border-radius: 20px;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s, box-shadow 0.3s;
   }
   
   .skill-card h3 {
     font-size: 1.8em;
+    margin-top: 15px;
     margin-bottom: 15px;
     color: #FFD117;
   }
@@ -190,7 +191,7 @@ h1 {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
   }
   
-  /* Footer Section */
+ 
   footer {
     background: #3241BC;
     color: white;
@@ -207,6 +208,12 @@ h1 {
   
   .footer-logo img {
     max-width: 150px;
+    border-radius: 40px;
+    background-position: left top;
+    background-repeat: repeat;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
   }
   
   .footer-links {
