@@ -238,6 +238,7 @@ h1 {
   .projects {
   padding: 4rem 2rem;
   background-color: #f4f4f4;
+  justify-content: center;
 }
 
 .projects h2 {
@@ -248,10 +249,11 @@ h1 {
 }
 
 .projects-container {
-  max-width: 1200px;
+  max-width: 1150px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(5, 350px);
+  justify-content: center;
   gap: 2rem;
   padding: 0 1rem;
 }
@@ -299,6 +301,7 @@ h1 {
 
 .project-content p {
   color: #666;
+  font-style: italic;
   font-size: 0.9rem;
   margin-bottom: 1rem;
 }
@@ -312,6 +315,7 @@ h1 {
 .project-tags span {
   background-color: #fbd117;
   color: #333;
+  font-style: italic;
   padding: 0.25rem 0.75rem;
   border-radius: 15px;
   font-size: 0.8rem;
