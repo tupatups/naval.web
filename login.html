@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Tups.</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        .gradient-custom {
+            background: linear-gradient(to right, #fbd177, #ffd747);
+        }
+        
+        .form-control:focus {
+            border-color: #ffd747;
+            box-shadow: 0 0 0 0.25rem rgba(255, 215, 71, 0.25);
+        }
+        
+        .btn-warning {
+            background-color: #ffd747;
+            border-color: #ffd747;
+        }
+        
+        .btn-warning:hover {
+            background-color: #fac822;
+            border-color: #fac822;
+        }
+        
+        .error-message {
+            color: #dc3545;
+            font-size: 0.875rem;
+            margin-top: 0.25rem;
+            display: none;
+        }
+        
+        .shake {
+            animation: shake 0.5s;
+        }
+        
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+            20%, 40%, 60%, 80% { transform: translateX(5px); }
+        }
+    </style>
+</head>
+<body class="gradient-custom">
+    <section class="vh-100">
+        <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                    <div class="card shadow-lg" style="border-radius: 1rem;">
+                        <div class="card-body p-5 text-center">
+                            <h3 class="mb-5">Login</h3>
+                            <form id="loginForm">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="username" placeholder="Username" required>
+                                    <label for="username">Username</label>
+                                </div>
+                                
+                                <div class="form-floating mb-4">
+                                    <input type="password" class="form-control" id="password" placeholder="Password" required>
+                                    <label for="password">Password</label>
+                                </div>
+                                
+                                <div id="loginError" class="error-message mb-3">Invalid username or password</div>
+                                
+                                <button class="btn btn-warning btn-lg btn-block w-100 mb-4" type="submit">Login</button>
+                                
+                                <p class="mb-0">Don't have an account? <a href="register.html" class="text-warning fw-bold">Register</a></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            if (username == 'tups' && password == 'tupepogi123') {
+                // redirect to welcome page
+                window.location.href = `welcome.html?name=${encodeURIComponent(username)}`;
+            } else {
+                // show error
+                document.getElementById('loginError').style.display = 'block';
+                document.getElementById('loginForm').classList.add('shake');
+                
+                // Remove the shake class after animation completes
+                setTimeout(() => {
+                    document.getElementById('loginForm').classList.remove('shake');
+                }, 500);
+            }
+        });
+    </script>
+</body>
+</html>
