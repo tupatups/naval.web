@@ -1,19 +1,18 @@
 * { 
     margin: 0; 
     padding: 0; 
-    box-sizing:
-    border-box;
- }
+    box-sizing: border-box;
+}
 
- body {
+body {
    font-family: Arial, sans-serif;
    background: linear-gradient(to right, #32418C, #003A70); 
    color: white; 
    min-height: 100vh;
    display: flex;
    flex-direction: column;
+}
 
- }
 .navbar {
    background: #e2df0b;
    display: flex; 
@@ -34,19 +33,20 @@
    gap: 20px;
 }
 
- .navbar a { 
+.navbar a { 
    color: #32418C;
    text-decoration: none; 
    font-weight: 700;
    transition: color 0.3s;
- }   
+}   
    
 .navbar a:hover {
    color: #FBD117;
 }
 
- .hero { 
+.hero { 
    flex: 1;
+   background: linear-gradient(to bottom, #432ba1 0%, #6b88da 100%);
    display: flex;
    align-items: center;
    justify-content: center;
@@ -55,13 +55,11 @@
    flex-wrap: wrap;
 }
 
- .hero-img { 
+.hero-img { 
    flex: 1 1 250px; 
    display: flex;
    justify-content: center;
- 
 }
-
 
 .hero-img img {
    width: 600px;
@@ -70,17 +68,19 @@
    object-fit: cover;
    border: 5px solid #FBD117;
 }
- .hero-img img:hover {
+
+.hero-img img:hover {
    transform: scale(1.05);
    transition: transform 0.3s;
- }
+}
 
- .hero-text {
+.hero-text {
    flex: 2 1 400px;
    text-align: left; 
    max-width: 600px;
- }
- .badges {
+}
+
+.badges {
    margin-bottom: 20px;
    display: flex;
    gap: 15px; 
@@ -88,125 +88,122 @@
 }
 
 .badge {
- background-color: #fbf701;
- color: #32418C;
- display: flex;
- align-items: center;
- gap: 8px;
- padding: 6px 14px;
- font-size: 14px;
- border-radius: 20px;
- font-weight: 600;
- box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
- transition: transform 0.2s;
+   background-color: #fbf701;
+   color: #32418C;
+   display: flex;
+   align-items: center;
+   gap: 8px;
+   padding: 6px 14px;
+   font-size: 14px;
+   border-radius: 20px;
+   font-weight: 600;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+   transition: transform 0.2s;
 }
 
 .badge:hover {
- transform: scale(1.05);
+   transform: scale(1.05);
 }
 
 .badge img {
- width: 25px;
- height: 25px;
- border-radius: 50%;
- object-fit: cover;
+   width: 25px;
+   height: 25px;
+   border-radius: 50%;
+   object-fit: cover;
 }
 
 .btn {
- padding: 12px 25px;
- background-color: #fbf701;
- color: #32418C;
- border-radius: 25px;
- font-weight: bold;
- font-size: medium;
- text-decoration: none;
- transition: background 0.3s, color 0.3s; 
- margin-top: 20px;
+   padding: 12px 25px;
+   background-color: #fbf701;
+   color: #32418C;
+   border-radius: 25px;
+   font-weight: bold;
+   font-size: medium;
+   text-decoration: none;
+   transition: background 0.3s, color 0.3s; 
+   margin-top: 20px;
 }
 
 p {
- margin-bottom: 20px;
+   margin-bottom: 20px;
 }
 
 h1 {
- color: yellow;
- font-size:xx-large
+   color: yellow;
+   font-size: xx-large;
 }
 
 .btn:hover {
- background: #DBB639;
- color: #220871;
+   background: #DBB639;
+   color: #220871;
 }
 
 .skills {
-    padding: 40px 14px;
-    background: linear-gradient(to bottom, #022241 5%, whitesmoke);
+    padding: 10px 14px;
+    background: linear-gradient(to bottom, #6b88da 0%, #a9c1f4 50%, #ffe18e 100%);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    /* Align items vertically */
     align-items: center;
-    /* Center text horizontally */
     justify-content: center;
     color: white;
     text-align: center;
-  }
+}
   
-  .skills h2 {
+.skills h2 {
     font-size: 2.4em;
     margin-bottom: 30px;
     color: #FFD117;
-  }
+}
   
-  .skills-container {
+.skills-container {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
-    /* Center items horizontally */
-  }
-  
-  .skill-card {
+}
+
+.skill-card {
     background: #3241BC;
     padding: 15px;
     border-radius: 20px;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s, box-shadow 0.3s;
-  }
+    width: 300px;
+}
   
-  .skill-card h3 {
+.skill-card h3 {
     font-size: 1.8em;
     margin-top: 15px;
     margin-bottom: 15px;
     color: #FFD117;
-  }
+}
   
-  .skill-card p {
+.skill-card p {
     font-size: 1.2em;
     color: whitesmoke;
-  }
+}
   
-  .skill-card:hover {
+.skill-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-  }
+}
   
- 
-  footer {
+footer {
     background: #3241BC;
     color: white;
     padding: 40px 20px;
     text-align: center;
-  }
+}
   
-  .footer-container {
+.footer-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-  }
+}
   
-  .footer-logo img {
+.footer-logo img {
     max-width: 150px;
     border-radius: 40px;
     background-position: left top;
@@ -214,137 +211,218 @@ h1 {
     padding: 20px;
     width: 200px;
     height: 150px;
-  }
+}
   
-  .footer-links {
+.footer-links {
     display: flex;
     gap: 15px;
-  }
+}
   
-  .social-link img {
+.social-link img {
     width: 30px;
     height: 30px;
     transition: transform 0.3s;
-  }
+}
   
-  .social-link img:hover {
+.social-link img:hover {
     transform: scale(1.1);
-  }
+}
   
-  .footer-text {
+.footer-text {
     font-size: 0.9em;
     color: #E0E0E0;
-  } 
-  .projects {
-  padding: 4rem 2rem;
-  background-color: #f4f4f4;
-  justify-content: center;
+} 
+
+.projects {
+    padding: 4rem 1rem; 
+    background: linear-gradient(to bottom, #ffe18e 0%, #ffc72c 50%, #e6b325 100%);
+    justify-content: center;
 }
 
 .projects h2 {
-  font-size: 2.4em;
-  margin-bottom: 30px;
-  text-align: center;
-  color: #333;
+    font-size: 2.4em;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #333;
 }
 
 .projects-container {
-  max-width: 1150px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(5, 350px);
-  justify-content: center;
-  gap: 2rem;
-  padding: 0 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
 }
 
 .project-card {
-  background: white;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    /* Added max-width to ensure cards don't get too wide */
+    max-width: 450px;
+    margin: 0 auto; /* Centers cards in their grid area */
+    width: 100%;
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
-}
-
-.video-container {
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-  height: 0;
-  overflow: hidden;
+    transform: translateY(-5px);
 }
 
 .project-image {
-  width: 100%;
-  overflow: hidden;
+    width: 100%;
+    overflow: hidden;
 }
 
 .project-image img {
-  width: 100%;
-  height: 35.5%;
-  display: block;
+    width: 100%;
+    height: auto; /* Changed from fixed height percentage to auto */
+    display: block;
+    object-fit: cover; /* Ensures images maintain aspect ratio */
 }
 
-.project-web-image img {
-  width: 100%;
-  height: 35%;
-  display: block;
-}
-
+.project-web-image img,
 .project-website-image img {
-  width: 100%;
-  height: 35%;
-  display: block;
+    width: 100%;
+    height: auto; /* Changed from fixed height percentage to auto */
+    display: block;
+    object-fit: cover;
 }
+
 .project-content {
-  padding: 1.5rem;
+    padding: 1.5rem;
 }
 
 .project-content h3 {
-  color: #333;
-  margin-bottom: 0.5rem;
-  font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
 }
 
 .project-content p {
-  color: #666;
-  font-style: italic;
-  font-size: 0.9rem;
-  margin-bottom: 1rem;
+    color: #666;
+    font-style: italic;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
 }
 
 .project-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
 }
+
 .project-tags span {
-  background-color: #fbd117;
-  color: #333;
-  font-style: italic;
-  padding: 0.25rem 0.75rem;
-  border-radius: 15px;
-  font-size: 0.8rem;
+    background-color: #fbd117;
+    color: #333;
+    font-style: italic;
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
 }
 
 .project-links {
-  display: flex;
-  gap: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap; /* Added to ensure links wrap on very small screens */
 }
 
 .project-link {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  font-size: 0.9rem;
-  transition: color 0.3s ease;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
 }
 
 .project-link:hover {
-  color: #fbd117;
+    color: #fbd117;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 12px 20px;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .navbar ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+   
+    .hero {
+        padding: 40px 20px;
+        text-align: center;
+    }
+    
+    .hero-img img {
+        width: 100%;
+        height: auto;
+        max-width: 400px;
+    }
+    
+    .hero-text {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+    
+    .badges {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 800px) {
+    .hero {
+        padding: 50px 60px;
+    }
+    
+    .hero-img img {
+        width: 100%;
+        height: auto;
+        max-width: 450px;
+    }
+    
+    .projects-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .skill-card {
+        width: 250px;
+    }
+}
+@media (max-width: 500px) {
+     video, iframe {
+        max-width: fit-content;
+        height: auto;
+    }
+    
+    .skill-card {
+        width: 100%;
+        max-width: 280px;
+    }
+    
+    h1 {
+        font-size: x-large;
+    }
+    
+    .skills h2,
+    .projects h2 {
+        font-size: 2em;
+    }
+    
+    .skill-card h3 {
+        font-size: 1.5em;
+    }
 }
